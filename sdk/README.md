@@ -1,14 +1,14 @@
 ### Changes per version of this codebase
 
-Changes since OPEN-R SDK 1.1.5 r4
+#### Changes since OPEN-R SDK 1.1.5 r4
 
 * WLAN Driver adjustment
 
-Changes since OPEN-R SDK 1.1.5 r3
+#### Changes since OPEN-R SDK 1.1.5 r3
 
 * Support ERS-7M3
 
-Changes since OPEN-R SDK 1.1.5 r2
+#### Changes since OPEN-R SDK 1.1.5 r2
 
 * Protect EEPROM after calling OPENR::Fatal()
   - After calling OPENR::Fatal(), data will not be written to the EEPROM 
@@ -21,7 +21,7 @@ Changes since OPEN-R SDK 1.1.5 r2
     using an environment valuable.
     Please see tcpgw-robocup.txt for more details.
 
-Changes since OPEN-R SDK 1.1.5 r1
+#### Changes since OPEN-R SDK 1.1.5 r1
 
 * High-current detection threshold for ERS-7
   - ERS-7 constantly checks the current from its battery. When the 
