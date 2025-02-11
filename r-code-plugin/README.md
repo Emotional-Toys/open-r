@@ -1,5 +1,4 @@
-The "R-CODE Plug-In for the OPEN-R SDK" is covered
-by the OPEN-R SDK's END-USER LICENSE AGREEMENT.
+The "R-CODE Plug-In for the OPEN-R SDK" is covered by the OPEN-R SDK's END-USER LICENSE AGREEMENT.
 
 ===============================
 [Development kit]
