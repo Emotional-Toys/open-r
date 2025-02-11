@@ -1,21 +1,21 @@
-The "R-CODE Plug-In for the OPEN-R SDK" is covered by the OPEN-R SDK's END-USER LICENSE AGREEMENT.
+### The "R-CODE Plug-In for the OPEN-R SDK" is covered by the OPEN-R SDK's END-USER LICENSE AGREEMENT.
 
-===============================
-[Development kit]
-Files that cannot be redistributed
-===============================
-   +--OPEN_R_SDK
-      +--OPEN-R
-         +--MS_ERS7
-         |  +--RCODE
-         |     +--Jpn
-         |     |  +--OPEN-R  (MS Image for R-CODE Plug-In Japanese edition)
-         |     |
-         |     +--Eng
-         |        +--OPEN-R  (MS Image for R-CODE Plug-In English edition)
-         |
-         +--include
-            +--OPENR         (header files for RMain & RPlugIn)
+#### Development kit
+
+File-system format
+
+* +--OPEN_R_SDK
+   -  +--OPEN-R
+         - +--MS_ERS7
+         -   |  +--RCODE
+         -   |     +--Jpn
+         -   |     |  +--OPEN-R  (MS Image for R-CODE Plug-In Japanese edition)
+         -   |     |
+         -   |     +--Eng
+         -   |        +--OPEN-R  (MS Image for R-CODE Plug-In English edition)
+         -   |
+   -  +--include
+         - +--OPENR         (header files for RMain & RPlugIn)
 
 ===============================
 [Sample program]
