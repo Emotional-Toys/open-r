@@ -1,14 +1,9 @@
 # Stage 1: Build stage
-FROM debian:bullseye-slim AS build
+FROM debian:6 AS build
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
-    openjdk-11-jdk \
-    python3 \
-    python3-pip \
-    unzip \
-    zip \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
@@ -25,7 +20,7 @@ WORKDIR /workspace/sdk
 RUN make
 
 # Stage 2: Runtime stage
-FROM debian:bullseye-slim
+FROM debian:6
 
 # Install runtime dependencies
 RUN apt-get update && apt-get install -y \
