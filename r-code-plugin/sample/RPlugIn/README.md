@@ -1,12 +1,14 @@
-R-Code Plug-In sample for the OPEN-R SDK
+## R-Code Plug-In sample for the OPEN-R SDK
 
-[Summary]
-  Contents
-  How to make the MS image.
-  Functions
+### Summary
+
+* Contents
+* How to make the MS image.
+* Functions
 
 
-[Contents]
+#### Contents
+```
   R_CODE_plugin_r1/sample/RPlugIn/README.TXT
     This file.
 
@@ -30,7 +32,7 @@ R-Code Plug-In sample for the OPEN-R SDK
 
   R_CODE_plugin_r1/sample/RPlugIn/MS/OPEN-R/APP/DATA/P/RCODE/
     The install directory for RPLUGIN.BIN.
-
+```
 
 [How to make the MS image]
   0. Set up the OPEN-R SDK
