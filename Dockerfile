@@ -63,8 +63,9 @@ COPY --chown=$USER_ID:$GROUP_ID --chmod=774 deps/gcc-3.3.6 /usr/src/gcc_build
 #RUN pwd
 RUN ../gcc_build/configure --prefix=/usr/local/gcc
 #../gcc-3.3.6/configure --disable-multilib --prefix=/usr/local/gcc-3.3.6
-#RUN make -j
-RUN make -k 
+#RUN make -j --build=arm-linux-gnueabi
+RUN make -j --build=x86_64-linux-gnu
+#RUN make -k 
 #2>&1 | tee build.log
 RUN make install
 
