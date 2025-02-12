@@ -6,7 +6,8 @@
 # 
 # CMake stays in version 3.25
 #
-FROM gcc:13.3
+#FROM gcc:13.3
+FROM debian:stable-slim
 
 # Supply when building so it matches your local, see 'build.sh'
 # --build-arg USER_ID=`id -u`
@@ -27,15 +28,14 @@ RUN useradd -m -p dummy --uid $USER_ID --gid $GROUP_ID builder
 
 RUN apt update -qq && \
 apt install -y -qq --no-install-recommends software-properties-common gpgv2 && \
-apt install -qq -y --no-install-recommends \
-cmake \
-doxygen \
-file \
-flex \
-gperf \
-iputils-ping \
-libmpfr-dev \
-libmpc-dev
+apt install -qq -y --no-install-recommends cmake 
+#doxygen \
+#file \
+#flex \
+#gperf \
+#iputils-ping \
+#libmpfr-dev \
+#libmpc-dev
 
 
 #
