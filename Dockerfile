@@ -52,7 +52,7 @@ RUN chmod 777 /usr/src
 #
 # COPY --chown=$USER_ID:$GROUP_ID --chmod=774 bin/gcc-3.3.6.tar.gz /usr/src
 
-RUN wget https://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-3.3.6/gcc-3.3.6.tar.gz
+RUN wget https://ftp.gnu.org/gnu/gcc/gcc-3.3.6/gcc-3.3.6.tar.bz2
 RUN tar xzvf gcc-3.3.6.tar.gz
 RUN mkdir gcc_build
 WORKDIR /usr/src/gcc_build
