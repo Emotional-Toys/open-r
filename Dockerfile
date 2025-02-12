@@ -43,8 +43,8 @@ libmpc-dev
 #
 WORKDIR /usr/src
 RUN chmod 777 /usr/src
-RUN git clone https://github.com/gnilk/testrunner
-RUN cd testrunner; mkdir bld; cd bld; cmake ..; make -j; make install
+#RUN git clone https://github.com/gnilk/testrunner
+#RUN cd testrunner; mkdir bld; cd bld; cmake ..; make -j; make install
 
 
 #
@@ -57,8 +57,6 @@ RUN tar xzvf gcc-3.3.6.tar.gz
 RUN mkdir gcc_build
 WORKDIR /usr/src/gcc_build
 RUN ../gcc-3.3.6/configure --disable-multilib --prefix=/usr/local/gcc-3.3.6
-RUN make -j
-# Note: I've seen segfaults when building - so let's just issue another one - as the build can catch up..
 RUN make -j
 RUN make install
 
