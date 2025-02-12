@@ -6,8 +6,8 @@
 # 
 # CMake stays in version 3.25
 #
-#FROM gcc:13.3 as builder
-FROM debian:stable-slim
+FROM gcc:13.3
+#FROM debian:stable-slim
 
 # Supply when building so it matches your local, see 'build.sh'
 # --build-arg USER_ID=`id -u`
@@ -28,8 +28,9 @@ RUN useradd -m -p dummy --uid $USER_ID --gid $GROUP_ID builder
 
 RUN apt update -qq && \
 #apt install -y -qq --no-install-recommends software-properties-common gpgv2 && \
-apt install -qq -y --no-install-recommends gcc build-essential bison
+apt install -qq -y --no-install-recommends cmake
 #cmake wget gpgv2
+#gcc build-essential bison
 #apt-transport-https
 #doxygen \
 #file \
@@ -59,10 +60,12 @@ RUN chmod 777 /usr/src
 RUN mkdir gcc_build
 WORKDIR /usr/src/gcc_build
 COPY --chown=$USER_ID:$GROUP_ID --chmod=774 deps/gcc-3.3.6 /usr/src/gcc_build
-RUN pwd
+#RUN pwd
 RUN ../gcc_build/configure --prefix=/usr/local/gcc
 #../gcc-3.3.6/configure --disable-multilib --prefix=/usr/local/gcc-3.3.6
-RUN make -j
+#RUN make -j
+RUN make -k 
+#2>&1 | tee build.log
 RUN make install
 
 #
