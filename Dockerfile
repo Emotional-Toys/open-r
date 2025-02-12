@@ -1,6 +1,6 @@
 #
 # This builds a docker container with GCC 13.3 and GCC 3.3.6
-# GCC 3.3.6 is built from source - which may take a while (quite a while in fact)
+# GCC 3.3.6 is built from source - which may take quite awhile
 # 
 # GCC 3.3.6 is installed in /usr/local/gcc-3.3.6 (you can run it side-along with GCC 13.3) and is set as the default environment
 # 
