@@ -10,6 +10,8 @@ OPEN-R is the very lowest available environment for AIBO development.   You won'
 
 `podman build -t open_r_sdk .`
 
+Build advice for gcc3.3.6 is [here](https://www.linuxfromscratch.org/blfs/view/6.3/general/gcc3.html)
+
 ### Documentation and Sample Code
 
 Before going too far, download the documentation and samples to see if OPEN-R is for you.
